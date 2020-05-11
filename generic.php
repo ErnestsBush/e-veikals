@@ -1,4 +1,3 @@
-ejs, ,pug
 <!DOCTYPE HTML>
 <!--
 	Transitive by TEMPLATED
@@ -39,24 +38,42 @@ ejs, ,pug
 						<div class="content">
 							<header class="align-center">
 								<h2>Choose your componentsssssss</h2>
+
 						   
 							<?php	
-							$host = "localhost";
-							$username = "root";
-							$user_pass = "usbw";
-							$database_in_use = "test";
+							DEFINE('DB_USERNAME', 'root');
+							DEFINE('DB_PASSWORD', '');
+							DEFINE('DB_HOST', 'localhost');
+							DEFINE('DB_DATABASE', 'test_db');
 
-							$mysqli = new mysqli ($host, $username, $user_pass, $database_in_use);
+							$mysqli = new mysqli(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_DATABASE);
 
-							if ($mysqli=>connect_errno) {
-								echo "failed to connect to MySQL: (" . $mysqli=>connect_errno . ") " . $mysqli=>connect_error;
-							}
-							echo $mysqli=>host_info . "\n";
+  						if (mysqli_connect_error()) {
+    							die('Connect Error ('.mysqli_connect_errno().') '.mysqli_connect_error());
+  							}
+
+  							echo 'Connected successfully.';
 							?>
 
 
 
 								<p>Choose wisely you must, young padawan!
+
+							<?php
+								$sql = "SELECT  username, email FROM users";
+								$result = $mysqli->query($sql);
+
+								if ($result->num_rows > 0) {
+								// output data of each row
+								while($row = $result->fetch_assoc()) {
+									echo  "Username " . $row["username"]. "Email:" . $row["email"]. "<br>";
+								}
+								} else {
+								echo "0 results";
+								}
+								$mysqli->close();
+							?>
+
 								</p>
 							</header>
 							<hr />

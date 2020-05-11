@@ -36,7 +36,7 @@
 		-->
 			<section id="banner" data-video="images/banner">
 				<div class="inner">
-					<h1>WASD COMPUTERS</h1>
+					<h1>WASD COMPUTERS </h1>
 					<p>You choose, we build it!<br />
 					<a href="#one" class="button special scrolly">Get Started</a>
 				</div>
@@ -56,7 +56,7 @@
 								</header>
 								<hr />
 								<p> The flora of this world is much like the real world's: diverse with many biomes, including swamps, forests, deserts, mountains, and snowy environments, alongside with rivers and oceans. The only known intelligent and talking woods are the Evil Trees and Pinocchio. Fungi can be affected by magic, as seen in Shrek 2 when Shrek sneezed the Happily Ever After Potion at a mushroom and it transformed into a rose minutes later.</p>
-								<p>The creatures inhabiting this world are very diverse. Humans, ogres and cats are intelligent and able to speak. The same may be said about most other species, although some only from what is known of individual examples. Dragon, the only known dragon, clearly understands what humans say, but does not speak. Other species, like horses, dogs and birds, are seemly not intelligent at all, just like their real-life counterparts. Some food also have life, like Gingerbread Man (a gingerbread cookie) and Humpty Dumpty (an egg).</p>
+								<p> The creatures inhabiting this world are very diverse. Humans, ogres and cats are intelligent and able to speak. The same may be said about most other species, although some only from what is known of individual examples. Dragon, the only known dragon, clearly understands what humans say, but does not speak. Other species, like horses, dogs and birds, are seemly not intelligent at all, just like their real-life counterparts. Some food also have life, like Gingerbread Man (a gingerbread cookie) and Humpty Dumpty (an egg).</p>
 							</div>
 						</div>
 					</div>
